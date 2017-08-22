@@ -1,0 +1,128 @@
+.box-gal {
+    border: 2 solid #6E6E6E;
+    padding: 12px;
+    height: 500px;
+    background-color: gray;
+}
+.box {
+    position: relative;
+    z-index: 12;
+}
+.title_c {
+    font-size: 2em;
+}
+.cont {
+    padding: 2pc;
+    border: 2px solid #010100;
+}
+.des_c {
+    font-size: 1em;
+    margin-bottom: 36px;
+}
+.more {
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    padding: 2px;
+}
+.img_fondo {
+    position:absolute;
+    bottom:-23px;
+    left:-23px;
+    z-index: -1;
+    width: 118%;
+    height: 122%;
+}
+.boxblack {
+    position:absolute;
+    bottom:-23px;
+    left:-23px;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.46);
+    width: 118%;
+    height: 122%;    
+}
+
+
+@media (max-width: 2652px) {
+    .img_fondo {
+        width: 112%;
+        height: 125%;
+    }
+    .boxblack {
+        width: 112%;
+        height: 125%;    
+    }
+}
+@media (max-width: 1380px) {
+    .img_fondo {
+        width: 122%;
+        height: 117%;
+    }
+    .boxblack {
+        width: 122%;
+        height: 117%;    
+    }
+}
+@media (max-width: 1024px) {
+    .img_fondo {
+        width: 126%;
+        height: 113%;
+    }
+    .boxblack {
+        width: 126%;
+        height: 113%;    
+    }
+}
+@media (max-width: 992px) {
+    .img_fondo {
+        width: 106%;
+        height: 130%;
+    }
+    .boxblack {
+        width: 106%;
+        height: 130%;    
+    }
+}
+@media (max-width: 770px) {
+    .img_fondo {
+        width: 106%;
+        height: 130%;
+        bottom:-23px;
+        left:-16px;
+    }
+    .boxblack {
+        width: 106%;
+        height: 130%;
+        bottom:-23px;
+        left:-16px;
+    }
+}
+@media (max-width: 640px) {
+    .img_fondo {
+        width: 108%;
+        height: 124%;
+        bottom:-23px;
+        left:-16px;
+    }
+    .boxblack {
+        width: 108%;
+        height: 124%;
+        bottom:-23px;
+        left:-16px;
+    }
+}
+@media (max-width: 380px) {
+    .img_fondo {
+        width: 115%;
+        height: 118%;
+        bottom:-23px;
+        left:-16px;
+    }
+    .boxblack {
+        width: 115%;
+        height: 118%;
+        bottom:-23px;
+        left:-16px;
+    }
+}

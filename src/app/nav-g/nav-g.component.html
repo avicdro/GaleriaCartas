@@ -1,3 +1,45 @@
-<p>
-  nav-g works!
-</p>
+<div class="nav-G">
+  <div class="nav-C left valign-wrapper col s12 m4">
+      <a mz-button [flat]="true" class="nav-Filtro white-text " id="btn-dropdown-demo" href="#">Filtrar</a>
+  </div>
+  <div class="nav-C right valign-wrapper col s12 m4">
+    <a mz-button  (click)="estado = 'activo'" [flat]="true" routerLink="js" class="nav-B white-text valign-wrapper ">
+      <i mz-icon valign-wrapper
+      [align]="'center'"
+      [icon]="'search'"
+      [size]="'medium'">
+     </i>
+    </a>
+    <div [@animacion]="estado" class="nav-In row valign-wrapper">
+      <mz-input-container [inline]="true" class=" col s10" style="z-index: 400; margin-top: 26px">
+        <input mz-input [@animacion]="estado"
+        [placeholder]="'Search'"
+        [validate]="true"
+        id="search-input"
+        type="text"/>
+      </mz-input-container>
+      <a  (click)=" estado = 'inactivo'"  class="nav-Bi col s2" style="cursor: pointer;">
+        <i mz-icon mz-input 
+        [size]="'small'"
+        [icon]="'close'">
+      </i>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<mz-dropdown
+[id]="'dropdown-demo'"
+[align]="'left'"
+[belowOrigin]="true"
+[dropdownButtonId]="'btn-dropdown-demo'"
+>
+<mz-dropdown-item><a href="#!">One</a></mz-dropdown-item>
+<mz-dropdown-divider></mz-dropdown-divider>
+<mz-dropdown-item><a href="#!">Two</a></mz-dropdown-item>
+<mz-dropdown-divider></mz-dropdown-divider>
+<mz-dropdown-item><a href="#!">Three</a></mz-dropdown-item>
+</mz-dropdown>
+

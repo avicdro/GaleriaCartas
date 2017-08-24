@@ -1,23 +1,28 @@
-.box-gal {
-    border: 2 solid #6E6E6E;
-    padding: 12px;
-    height: 500px;
-    background-color: gray;
-}
 .box {
     position: relative;
+    height: 200px;
     z-index: 12;
 }
-.title_c {
-    font-size: 2em;
-}
 .cont {
-    padding: 2pc;
+    padding: 27px;
     border: 2px solid #010100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.title_c {
+    font-size: 1.5em;
+    transform: scale(12px);
+    position: absolute;
+    top: 12px;
+    left: 12px;
 }
 .des_c {
     font-size: 1em;
     margin-bottom: 36px;
+    position: absolute;
+    top: 70px;
+    left: 15px
 }
 .more {
     position: absolute;
@@ -38,7 +43,7 @@
     bottom:-23px;
     left:-23px;
     z-index: -1;
-    background-color: rgba(0, 0, 0, 0.46);
+    background-color: hsla(0, 6%, 10%, 0.46);
     width: 118%;
     height: 122%;    
 }
@@ -56,22 +61,22 @@
 }
 @media (max-width: 1380px) {
     .img_fondo {
-        width: 122%;
-        height: 117%;
+        width: 119%;
+        height: 128%;
     }
     .boxblack {
-        width: 122%;
-        height: 117%;    
+        width: 119%;
+        height: 128%;    
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .img_fondo {
         width: 126%;
-        height: 113%;
+        height: 120%;
     }
     .boxblack {
         width: 126%;
-        height: 113%;    
+        height: 120%;    
     }
 }
 @media (max-width: 992px) {
